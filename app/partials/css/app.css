@@ -1,0 +1,187 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+table {
+  width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.caption {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.headings {
+    border: 2px solid black;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+.dashboard {
+  padding-bottom: 20px;
+  display: inline;
+}
+
+.banner-top {
+  font-size: 1.5em;
+  font-weight: bolder;
+  margin: auto;
+  height: 8px;
+  display: inline-block;
+}
+
+.navbar {
+  position: relative;
+  min-height: 60px;
+  margin-bottom: 21px;
+  border: 1px solid transparent;
+}
+
+.navbar {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.navbar a:focus {
+    outline: 0;
+}
+
+.navbar .navbar-nav {
+    letter-spacing: 1px;
+}
+
+.navbar .navbar-nav li a:focus {
+    outline: 0;
+}
+
+.navbar {
+  color: white;
+  font-weight: bold;
+}
+
+@media(min-width:768px) {
+    .navbar-fixed-top {
+        padding: 25px 0;
+        position: relative;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        font-size: 2em;
+        text-transform: none;
+        font-weight: normal;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar-fixed-top .navbar-shrink {
+        padding: 10px 0;
+    }
+
+    .navbar-fixed-top .navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+        text-transform: none;
+        font-weight: normal;
+    }
+}
+
+.navbar-default,
+.navbar-inverse {
+    border: 0;
+}
+
+.nav {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.nav > li {
+  position: relative;
+  display: block;
+}
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: #a3cddd;
+}
+.nav > li.disabled > a {
+  color: #a3cddd;
+}
+.nav > li.disabled > a:hover,
+.nav > li.disabled > a:focus {
+  color: #a3cddd;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: not-allowed;
+}
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  background-color: #a3cddd;
+  border-color: #a3cddd;
+}
+.nav .nav-divider {
+  height: 1px;
+  margin: 9.5px 0;
+  overflow: hidden;
+}
+.nav > li > a > img {
+  max-width: none;
+}
+
+.navbar-right {
+    float: right !important;
+    margin-right: -15px;
+  }
+  .navbar-right ~ .navbar-right {
+    margin-right: 0;
+  }
